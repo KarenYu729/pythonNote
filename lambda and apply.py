@@ -49,6 +49,9 @@ print(df.apply(f1))
 print(df.max())
 f2 = lambda x: x == 'A'
 print(df.apply(f2, axis=0))
+# DataFrame.drop(labels=None,axis=0, index=None, columns=None, inplace=False)
+# axis 默认为0，指删除行，因此删除columns时要指定axis=1；
+# axis = 0: row axis = 1:col
 """
 output
   Name  age gender
